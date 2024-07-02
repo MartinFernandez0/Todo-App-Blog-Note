@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+#resultsList {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+
+#resultsList li {
+    border: 1px solid #CCC;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#resultsList input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+#resultsList li.selected{
+    text-decoration: line-through;
+    font-weight: bold;
+    background-color: rgb(43, 39, 39);
+}
